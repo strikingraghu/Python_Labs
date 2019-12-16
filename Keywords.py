@@ -27,7 +27,7 @@ print("List elements after deletion =", list_1)
 
 list_2 = [5, 6, 7, 8, 9, 10]
 print("Assert keyword example =", 7 < 5)
-
+assert(7 < 5)
 
 # Python code to demonstrate working of in and is
 
@@ -40,3 +40,59 @@ else:
 
 print(" " is " ")  # using is to check object identity string is immutable hence occupy same memory location
 print([] is [])  # using is to check object identity dictionary is mutable hence occupy different memory location
+
+# Python code to demonstrate working of global keyword
+
+one_string = 10
+
+
+# printing one_string
+def read():
+    print("Value without any modifications =", one_string)
+
+
+def modification_1():
+    global one_string
+    one_string = 5
+
+
+def modification_2():
+    one_string = 15
+
+
+read()
+modification_1()
+read()
+modification_2()
+read()
+
+# Python code to demonstrate working of non local keyword
+print("Value of a using nonlocal is : ", end="")
+
+
+def outer_one():
+    sample_a = 5
+
+    def inner_one():
+        nonlocal sample_a
+        sample_a = 10
+    inner_one()
+    print(sample_a)
+
+
+outer_one()
+
+
+print("Value of a without nonlocal is :", end="")
+
+
+def outer_two():
+    another_sample_a = 5
+
+    def inner_two():
+        another_sample_a = 10
+    inner_two()
+    print(another_sample_a)
+
+
+outer_two()
