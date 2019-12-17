@@ -6,6 +6,7 @@ There are 33 keywords in Python 3.7. This number can vary slightly in the course
 
 
 # Python code to demonstrate keywords
+print("# Python code to demonstrate keywords")
 
 x = None
 y = None
@@ -15,21 +16,27 @@ print("None == 1?", None == 1)
 print(True or False)
 print(False or True)
 print(not True)
+print()
 
 # Python code to demonstrate del
+print("# Python code to demonstrate del")
 
 list_1 = [100, 200, 300]
 print("List elements before deletion =", list_1)
 del(list_1[0])
 print("List elements after deletion =", list_1)
+print()
 
 # Python code to explain assert
+print("# Python code to explain assert")
 
 list_2 = [5, 6, 7, 8, 9, 10]
 print("Assert keyword example =", 7 < 5)
-assert(7 < 5)
+#assert(7 < 5)
+print()
 
 # Python code to demonstrate working of in and is
+print("# Python code to demonstrate working of in and is")
 
 sample_string = "geeksforgeeks"
 sub_string = "geek"
@@ -40,8 +47,10 @@ else:
 
 print(" " is " ")  # using is to check object identity string is immutable hence occupy same memory location
 print([] is [])  # using is to check object identity dictionary is mutable hence occupy different memory location
+print()
 
 # Python code to demonstrate working of global keyword
+print("# Python code to demonstrate working of global keyword")
 
 one_string = 10
 
@@ -65,8 +74,10 @@ modification_1()
 read()
 modification_2()
 read()
+print()
 
 # Python code to demonstrate working of non local keyword
+print("# Python code to demonstrate working of non local keyword")
 print("Value of a using nonlocal is : ", end="")
 
 
@@ -81,7 +92,10 @@ def outer_one():
 
 
 outer_one()
+print()
 
+# Python code to demonstrate without use of non local keyword
+print("# Python code to demonstrate without non local keyword")
 
 print("Value of a without nonlocal is :", end="")
 
@@ -96,3 +110,4 @@ def outer_two():
 
 
 outer_two()
+print()
