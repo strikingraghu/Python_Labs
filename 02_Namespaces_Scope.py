@@ -18,6 +18,7 @@ variable_a = 10
 outer_func()
 print("3 - variable_a =", variable_a)
 
+
 # Variables in Global & Local namespace
 
 
@@ -36,4 +37,4 @@ def outer_func():
 
 variable_a = 10
 outer_func()
-print("2 - variable_a =", variable_a)
+print("3 - variable_a =", variable_a)
