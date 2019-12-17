@@ -4,6 +4,7 @@ Let’s go through an example, a directory-file system structure in computers.""
 
 
 # Variables in Global & Local namespace
+print("# Variables in Global & Local namespace")
 def outer_func():
     variable_a = 20
 
@@ -17,9 +18,10 @@ def outer_func():
 variable_a = 10
 outer_func()
 print("3 - variable_a =", variable_a)
-
+print()
 
 # Variables in Global & Local namespace
+print("# Variables in Global & Local namespace")
 
 
 def outer_func():
@@ -38,3 +40,4 @@ def outer_func():
 variable_a = 10
 outer_func()
 print("3 - variable_a =", variable_a)
+print()
