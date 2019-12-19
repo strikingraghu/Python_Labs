@@ -1,6 +1,8 @@
-"""A namespace is a system to have a unique name for each and every object in Python.
-An object might be a variable or a method. Python itself maintains a namespace in the form of a Python dictionary.
-Let’s go through an example, a directory-file system structure in computers."""
+"""
+    A namespace is a system to have a unique name for each and every object in Python.
+    An object might be a variable or a method. Python itself maintains a namespace in the form of a Python dictionary.
+    Let’s go through an example, a directory-file system structure in computers.
+"""
 
 
 # Variables in Global & Local namespace

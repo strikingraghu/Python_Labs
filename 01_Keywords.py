@@ -1,8 +1,10 @@
-"""Keywords are the reserved words in Python.
-We cannot use a keyword as a variable name, function name or any other identifier.
-They are used to define the syntax and structure of the Python language.
-In Python, keywords are case sensitive.
-There are 33 keywords in Python 3.7. This number can vary slightly in the course of time."""
+"""
+    Keywords are the reserved words in Python.
+    We cannot use a keyword as a variable name, function name or any other identifier.
+    They are used to define the syntax and structure of the Python language.
+    In Python, keywords are case sensitive. There are 33 keywords in Python 3.7.
+    This number can vary slightly in the course of time.
+"""
 
 import keyword
 
