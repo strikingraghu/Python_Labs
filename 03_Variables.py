@@ -43,3 +43,9 @@ print("Variable_2 Type =", type(variable_2))
 print("Variable_3 Type =", type(variable_3))
 print("Variable_4 Type =", type(variable_4))
 print()
+
+# Strings
+print("# Strings in Python code")
+string_1 = "Hello, you are in Bangalore"
+string_2 = "Indeed, its a great city"
+print("Length - string_1 =", len(string_1))
