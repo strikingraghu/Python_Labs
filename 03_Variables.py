@@ -65,3 +65,11 @@ list_2 = list_1.copy()
 print("List_2 values after copying it via List_1 =", list_2)
 list_2.reverse()
 print("Reversing List_1 in this context =", list_2)
+
+# Tuples
+print("# Tuples in python code")
+tuple_1 = (34, 389, "Ram", "Suresh", 9095920489.376251j)
+print("Length of Tuple in this code =", tuple_1.__len__())
+print("Class of the Tuple in this code =", tuple_1.__class__)
+print("Hash value of Tuple in this code =", tuple_1.__hash__())
+print("Is element present =", tuple_1.__contains__("Ram"))
