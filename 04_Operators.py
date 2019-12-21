@@ -15,13 +15,20 @@
 # Example - Python Arithmetic Operators
 # Assume variable A holds 10 and variable B holds 20, then −
 
-# Python code for Arithmetic operations
+# Python code for Generic operators
 print("# Python code for Arithmetic operations")
 var_a = 10
 var_b = 20
+var_c = var_a + var_b
 print("Addition =", var_a + var_b)
 print("Subtraction =", var_b - var_a)
 print("Multiplication =", var_a * var_b)
-print()
-
-
+print("& Binary AND =", var_a & var_b)
+print("| Binary OR =", var_a | var_b)
+print("^ Binary XOR =", var_a ^ var_b)
+print("~ Ones Complement =", ~var_b)
+print("<< Binary Left Shift =", var_a << 2)
+print(">> Binary Right Shift =", var_a >> 2)
+var_c = 20
+var_c *= var_a
+print("Value of var_c after modifications =", var_c)
