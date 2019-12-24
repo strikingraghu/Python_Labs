@@ -37,3 +37,44 @@ parrot_02.sing("Kannada")
 print(parrot_01.species)
 print(parrot_02.species)
 print()
+
+# Inheritance OOP's Logic
+
+
+class Bird:
+
+    # Instance attribute
+    def __init__(self):
+        print("Bird is ready to fly!")
+
+    @staticmethod
+    def who_is_this(self):
+        print("I am a bird!")
+
+    @staticmethod
+    def swim():
+        print("Swim faster!")
+
+
+class Penguin(Bird):
+
+    def __init__(self):
+        super().__init__()
+        print("Penguin is now ready!")
+
+    def who_is_this(self):
+        print("Penguin")
+
+    def swim(self):
+        print("I cannot swim faster!")
+
+
+peggy01 = Bird()
+peggy02 = Penguin()
+peggy01.__init__()
+peggy01.who_is_this()
+peggy01.swim()
+
+peggy02.__init__()
+peggy02.who_is_this()
+peggy02.swim()
