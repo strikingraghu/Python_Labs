@@ -132,3 +132,81 @@ print(pulsar.bike_price())
 
 swift.number_of_wheels(4)
 print(swift.car_price())
+print()
+
+# Encapsulation OOP's Logic
+print("Encapsulation is one of the fundamental concepts in object-oriented programming (OOP)."
+      "It describes the idea of bundling data and methods that work on that data within one unit,"
+      "e.g., a class in Python. This concept is also often used to hide the internal representation, or"
+      "state, of an object from the outside")
+print()
+
+
+class Computer:
+
+    def __init__(self):
+        print("Inside Computer Class")
+        self._brand = 'Lenovo'
+
+    @staticmethod
+    def model():
+        model = 'T440S'
+
+    @staticmethod
+    def price(price):
+        price = 40000
+        if price > 4000:
+            print("You are planning to pay more!")
+        else:
+            print("You are planning to pay less!")
+
+# Instantiation
+
+
+purchase_computer = Computer()
+purchase_computer.model()
+purchase_computer.price(35000)  # Trying to pay 35K for this computer
+print()
+
+# Polymorphism OOP's Logic:
+print("Polymorphism is the ability of an object to take on many forms."
+      "The most common use of polymorphism in OOP occurs when a parent class reference"
+      "is used to refer to a child class object. Any python object that can pass more "
+      "than one IS-A test is considered to be polymorphic.")
+print()
+
+
+class Dog:
+
+    def __init__(self):
+        print("Inside Dog's Class")
+
+    @staticmethod
+    def run():
+        print("Dog can run!")
+
+# Child Class
+
+
+class Labrador:
+
+    def __init__(self):
+        print("Inside Labrador's Class")
+
+    @staticmethod
+    def run():
+        print("Labrador can also run!")
+
+# Common Interface
+
+
+def lets_test_running_state(any_dog):
+    any_dog.run()
+
+# Instantiation
+
+
+puppy01 = Dog()
+puppy02 = Labrador()
+lets_test_running_state(puppy01)
+lets_test_running_state(puppy02)
