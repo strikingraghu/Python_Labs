@@ -39,6 +39,11 @@ print(parrot_02.species)
 print()
 
 # Inheritance OOP's Logic
+print("Inheritance is a mechanism in which one object acquires all the properties"
+      "and behaviors of a parent object. ... The idea behind inheritance is that"
+      "you can create new classes that are built upon existing classes."
+      "When you inherit from an existing class, you can reuse methods and fields of the parent class.")
+print()
 
 
 class Bird:
@@ -47,12 +52,10 @@ class Bird:
     def __init__(self):
         print("Bird is ready to fly!")
 
-    @staticmethod
     def who_is_this(self):
         print("I am a bird!")
 
-    @staticmethod
-    def swim():
+    def swim(self):
         print("Swim faster!")
 
 
@@ -71,10 +74,61 @@ class Penguin(Bird):
 
 peggy01 = Bird()
 peggy02 = Penguin()
+print()
 peggy01.__init__()
 peggy01.who_is_this()
 peggy01.swim()
-
+print()
 peggy02.__init__()
 peggy02.who_is_this()
 peggy02.swim()
+print("Peggy01 is calling Parent class functions and Peggy02 is calling Child class functions")
+print()
+
+# Abstraction OOP's Logic
+print("Abstraction is a process of hiding the implementation details and showing"
+      "only functionality to the user. Another way, it shows only essential things to the"
+      "user and hides the internal details, for example, sending SMS where you type the text and send the message.")
+print()
+
+
+class Vehicle:
+
+    def __init__(self, engine_type, color):
+        self.engine_type = engine_type
+        self.color = color
+        print("Vehicle Details =", self, engine_type, color)
+
+    @staticmethod
+    def number_of_wheels(number):
+        if number == 4:
+            print("It's a 4 wheeler")
+        if number == 2:
+            print("It's a 2 wheeler")
+
+
+class Bike(Vehicle):
+
+    @staticmethod
+    def bike_price():
+        bike_price = 55000
+        return bike_price
+
+
+class Car(Vehicle):
+
+    @staticmethod
+    def car_price():
+        car_price = 350000
+        return car_price
+
+
+print("Instantiation - Objects")
+pulsar = Bike('Petrol', 'Black')
+swift = Car('Diesel', 'Red')
+
+pulsar.number_of_wheels(2)
+print(pulsar.bike_price())
+
+swift.number_of_wheels(4)
+print(swift.car_price())
